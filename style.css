@@ -1,0 +1,4 @@
+@font-face {
+    font-family: 'Gotham Pro Light', 'Gotham Pro Bold', 'Montserrat ExtraLight', 'Montserrat SemiBold', 'Montserrat Thin';
+    src: url('GothamPro-Light.woff'), url('GothamPro-Bold.woff'), url('Montserrat-ExtraLight.woff'), url('Montserrat-SemiBold.woff'), url('Montserrat-Thin.woff');
+}
