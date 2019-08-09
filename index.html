@@ -23,18 +23,19 @@
                 <li><a href="contacts.html">КОНТАКТЫ</a></li>
             </ul>
         </nav>
-        <div>
-            +7(495) 970-70-05<div>Перезвонить</div>
+        <div id="connection">
+            +7(495) 970-70-05
+            <div id="Group"></div>
+            <div id="call_back">Перезвонить</div>
         </div>
     </header>
     <main>
-        <article>
+        <article id="carousel">
             <div>
                 <figure>
                     <img src="img/main/SamorezSlide@2x.jpg" alt="САМОРЕЗЫ">
                     <figcaption>
                         <h1>Саморезы</h1>
-                        <hr>
                         <p>
                             Только качественная, сертифицированная продукция<br>
                             Лучшие цены от производителей без посредников
@@ -46,7 +47,6 @@
                     <img src="img/main/ShpilkaSlide@2x.jpg" alt="ШПИЛЬКА ВИНТОВАЯ">
                     <figcaption>
                         <h1>Шпилька винтовая</h1>
-                        <hr>
                         <p>
                             Только качественная, сертифицированная продукция<br>
                             Лучшие цены от производителей безпосредников
@@ -58,7 +58,6 @@
                     <img src="img/main/AnchorSlide@2x.jpg" alt="АНКЕРНАЯ ТЕХНИКА">
                     <figcaption>
                         <h1>Анкерная техника</h1>
-                        <hr>
                         <p>
                             Только качественная, сертифицированная продукция<br>
                             Лучшие цены от производителей без посредников
@@ -70,7 +69,6 @@
                     <img src="img/main/ShurupSlide2@2x.jpg" alt="ШУРУПЫ">
                     <figcaption>
                         <h1>Шурупы</h1>
-                        <hr>
                         <p>
                             Только качественная, сертифицированная продукция<br>
                             Лучшие цены от производителей без посредников
@@ -79,14 +77,14 @@
                     </figcaption>
                 </figure>
             </div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
         </article>
-        <article>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <article id="advantages">
             <h2>Наши преимущества</h2>
             <div>
                 Самые выгодные<br>
@@ -98,6 +96,8 @@
             </div>
             <div>
                 Нам можно доверять
+                <br>
+                <br>
             </div>
             <div>
                 Гибкая система<br>
@@ -109,39 +109,39 @@
             </div>
         </article>
         <hr>
-        <article>
+        <article id="products">
             <h2>Наша продукция</h2>
             <a href="products.self-tapping screws.html">
                 <figure>
                     <img src="img/products/self-tapping screws/self-tapping screws.jpg" alt="САМОРЕЗЫ">
-                    <figcaption>САМОРЕЗЫ</figcaption>
+                    <figcaption><br>САМОРЕЗЫ</figcaption>
                 </figure>
             </a>
             <a href="products.anchor technology.html">
                 <figure>
                     <img src="img/products/anchor technology/anchor technology.jpg" alt="АНКЕРНАЯ ТЕХНИКА">
-                    <figcaption>АНКЕРНАЯ ТЕХНИКА</figcaption>
+                    <figcaption><br>АНКЕРНАЯ ТЕХНИКА</figcaption>
                 </figure>
             </a>
             <a href="products.screws.html">
                 <figure>
                     <img src="img/products/screws/screws.jpg" alt="ШУРУПЫ">
-                    <figcaption>ШУРУПЫ</figcaption>
+                    <figcaption><br>ШУРУПЫ</figcaption>
                 </figure>
             </a>
             <a href="products.metriсs.html">
                 <figure>
                     <img src="img/products/metrics/metrics.jpg" alt="МЕТРИКА">
-                    <figcaption>МЕТРИКА</figcaption>
+                    <figcaption><br>МЕТРИКА</figcaption>
                 </figure>
             </a>
             <a href="products.html">Перейти в каталог</a>
         </article>
-        <article>
+        <article id="working">
             <h2>Как мы работаем</h2>
             <div>
                 <div>1</div>
-                <h3>Оформление заявки</h3>
+                <h3>ОФОРМЛЕНИЕ ЗАЯВКИ</h3>
                 <p>
                     Вы оставляете заявку на почте<br>
                     или по телефону
@@ -149,7 +149,7 @@
             </div>
             <div>
                 <div>2</div>
-                <h3>Подтверждение заказа</h3>
+                <h3>ПОДТВЕРЖДЕНИЕ ЗАКАЗА</h3>
                 <p>
                     Менеджер согласовывает с вами<br>
                     все детали и подтверждает заказ
@@ -157,7 +157,7 @@
             </div>
             <div>
                 <div>3</div>
-                <h3>Отгрузка товара</h3>
+                <h3>ОТГРУЗКА ТОВАРА</h3>
                 <p>
                     Мы доставляем товар или вы<br>
                     забираете его со склада
@@ -165,7 +165,7 @@
             </div>
         </article>
         <hr>
-        <article>
+        <article id="penultimate">
             <h2>Заголовок</h2>
             <p>
                 Копирайтеры на основе техзадания напишут качественные читабельные тексты, максимально заточенные под
@@ -185,61 +185,70 @@
             </p>
         </article>
     </main>
-    <article>
+    <article id="questions">
         <h2>Остались вопросы? Напишите нам</h2>
         <form action="#">
             <input type="text" placeholder="Ваше имя*"><br>
             <input type="text" placeholder="Телефон*"><br>
             <input type="text" placeholder="E-mail"><br>
             <textarea name="text" id="" cols="100" rows="10" placeholder="Комментарий"></textarea><br>
-            <div>
-                <input type="checkbox" checked>
-                Я согласен с политикой обработки<br>
-                персональных данных
-                <input type="submit" value="Отправить">
-            </div>
+            <input type="checkbox" id="jackdaw" name="data" checked>
+            <label for="jackdaw">
+                <div>
+                    <p>
+                        Я согласен с политикой обработки<br>
+                        персональных данных
+                    </p>
+                </div>
+            </label>
+            <input type="submit" value="Отправить">
         </form>
     </article>
-    <article>
-        <div>&#10006;</div>
+    <div class="blackout"></div>
+    <article class="feedback">
+        <div onclick="x()">&#10006;</div>
         <h2>Заказать обратный звонок</h2>
         <form action="#">
-            <input type="text" placeholder="Ваше имя*"><br>
-            <input type="text" placeholder="Телефон*"><br>
-            <input type="text" placeholder="E-mail"><br>
-            <div>
-                <input type="checkbox" checked>
-                Я согласен с политикой обработки<br>
-                персональных данных
-                <br>
-                <input type="submit" value="Заказать">
-            </div>
+            <input type="text" placeholder="   Ваше имя*"><br>
+            <input type="text" placeholder="   Телефон*"><br>
+            <input type="text" placeholder="   E-mail"><br>
+            <input type="checkbox" id="jackdaw" name="data" checked>
+            <label for="jackdaw">
+                <div>
+                    <p>
+                        Я согласен с политикой обработки<br>
+                        персональных данных
+                    </p>
+                </div>
+            </label>
+            <br>
+            <input type="submit" value="Заказать">
         </form>
     </article>
     <footer>
         <nav>
             <table>
                 <tr>
-                    <td>ГЛАВНАЯ</td>
-                    <td>ПРОДУКЦИЯ</td>
+                    <td><a href="index.html">ГЛАВНАЯ</a></td>
+                    <td><a href="products.html">ПРОДУКЦИЯ</a></td>
                 </tr>
                 <tr>
-                    <td>КОМПАНИЯ</td>
-                    <td>КОНТАКТЫ</td>
+                    <td><a href="company.html">КОМПАНИЯ</a></td>
+                    <td><a href="contacts.html">КОНТАКТЫ</a></td>
                 </tr>
             </table>
             <table>
                 <tr>
-                    <td>Саморезы</td>
-                    <td>Анкерная техника</td>
+                    <td><a href="products.self-tapping screws.html">Саморезы</a></td>
+                    <td><a href="products.anchor technology.html">Анкерная техника</a></td>
                 </tr>
                 <tr>
-                    <td>Шурупы</td>
-                    <td>Метрика</td>
+                    <td><a href="products.screws.html">Шурупы</a></td>
+                    <td><a href="products.metriсs.html">Метрика</a></td>
                 </tr>
             </table>
         </nav>
-        <div>
+        <address>
             <p>
                 +7(495) 970-70-05<br>
                 <br>
@@ -248,7 +257,7 @@
                 <br>
                 sales@vegakrep.ru
             </p>
-        </div>
+        </address>
         <small>© vegakrep.ru 2010 - 2018. Все права защищены</small>
     </footer>
     <script src="script.js"></script>

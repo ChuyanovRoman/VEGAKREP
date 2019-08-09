@@ -2,3 +2,637 @@
     font-family: 'Gotham Pro Light', 'Gotham Pro Bold', 'Montserrat ExtraLight', 'Montserrat SemiBold', 'Montserrat Thin';
     src: url('GothamPro-Light.woff'), url('GothamPro-Bold.woff'), url('Montserrat-ExtraLight.woff'), url('Montserrat-SemiBold.woff'), url('Montserrat-Thin.woff');
 }
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1519px;
+    min-width: 1423px;
+}
+
+body a {
+    text-decoration: none;
+}
+
+header {
+    width: inherit;
+    height: 110px;
+    background-color: black;
+    color: white;
+}
+
+header a {
+    color: white;
+}
+
+header nav a {
+    float: left;
+}
+
+header nav a div {
+    width: 65px;
+    height: 65px;
+    background: url(img/main/Path\ 263@2x.png);
+    background-position: 11px 16px;
+    background-repeat: no-repeat;
+    background-color: #FF4500;
+    border-radius: 50%;
+    position: relative;
+    top: 22px;
+    left: 60px;
+    float: left;
+}
+
+header nav a h1 {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 25px;
+    float: left;
+    position: relative;
+    top: 18px;
+    left: 84px;
+}
+
+header ul {
+    font-family: Montserrat;
+    font-size: 18px;
+    list-style-type: none;
+    float: left;
+    position: relative;
+    top: 25px;
+    left: 116px;
+}
+
+header ul li {
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+}
+
+header ul li:hover {
+    border-bottom: 3px solid #FF4500;
+}
+
+.border_bottom {
+    border-bottom: 3px solid #FF4500;
+}
+
+#connection {
+    font-family: Montserrat;
+    font-size: 18px;
+    float: left;
+    position: relative;
+    top: 44px;
+    left: 170px;
+    cursor: pointer
+}
+
+#Group {
+    width: 33px;
+    height: 33px;
+    background: url(img/Group\ 216@2x.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: -8px;
+    left: 203px;
+    float: left;
+}
+
+#call_back {
+    position: relative;
+    top: -22px;
+    left: 210px;
+}
+
+#carousel {
+    width: inherit;
+    height: 1080px;
+    overflow: hidden;
+}
+
+#carousel div figure {
+    margin: 0 auto;
+}
+
+#carousel figure img {
+    width: 1519px;
+    height: 1080px;
+}
+
+#carousel figcaption {
+    width: 398px;
+    height: 297px;
+    position: relative;
+    top: -800px;
+    left: 200px;
+}
+
+#carousel figcaption h1 {
+    float: left;
+    color: white;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 400;
+    border-bottom: 6px solid #FF4500;
+}
+
+#carousel figcaption p {
+    float: left;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#carousel figcaption button {
+    margin-top: 100px;
+    background-color: #FF4500;
+    width: 190px;
+    height: 41px;
+    border-radius: 25px/25px;
+    float: left;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+main ul li {
+    float: left;
+    font-size: 30px;
+    margin-left: 20px;
+    color: #FF4500;
+    position: relative;
+    top: -110px;
+    left: 650px;
+}
+
+#advantages {
+    margin-left: 50px;
+    height: 500px;
+    text-align: center;
+}
+
+#advantages div {
+    font-family: Montserrat;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    float: left;
+    height: 200px;
+    position: relative;
+}
+
+#advantages div:nth-of-type(1) {
+    width: 130px;
+    background: url(img/main/group/Group\ 201@2x.png);
+    background-repeat: no-repeat;
+    background-size: 136px;
+    background-position: 0px 26px;
+    left: -220px;
+    top: 170px;
+}
+
+#advantages div:nth-of-type(2) {
+    width: 188px;
+    background: url(img/main/group/Group\ 215@2x.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: 38px 0px;
+    left: -140px;
+    top: 170px;
+}
+
+#advantages div:nth-of-type(3) {
+    width: 156px;
+    background: url(img/main/group/Group\ 207@2x.png);
+    background-repeat: no-repeat;
+    background-size: 155px;
+    background-position: 0px 30px;
+    left: -70px;
+    top: 170px;
+}
+
+#advantages div:nth-of-type(4) {
+    width: 114px;
+    background: url(img/main/group/Group\ 284@2x.png);
+    background-repeat: no-repeat;
+    background-size: 115px;
+    background-position: 0px 15px;
+    left: 30px;
+    top: 170px;
+}
+
+#advantages div:nth-of-type(5) {
+    width: 150px;
+    background: url(img/main/group/Group\ 286@2x.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: 0px 50px;
+    left: 140px;
+    top: 170px;
+}
+
+#products {
+    height: 650px;
+}
+
+#products h2 {
+    left: 625px;
+}
+
+#products a {
+    width: 300px;
+    height: 300px;
+    float: left;
+    position: relative;
+    top: 200px;
+    left: -160px;
+}
+
+#products a:nth-of-type(2) {
+    left: -140px;
+}
+
+#products a:nth-of-type(3) {
+    left: -120px;
+}
+
+#products a:nth-of-type(4) {
+    left: -100px;
+}
+
+#products a figure {
+    width: 300px;
+    height: 200px;
+}
+
+#products a figure img {
+    width: 300px;
+    height: 200px;
+}
+
+#products a figure figcaption {
+    font-family: Montserrat;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+#products a:nth-of-type(5) {
+    width: 190px;
+    height: 41px;
+    background-color: #FF4500;
+    border-radius: 25px/25px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+    top: 240px;
+    left: 630px;
+}
+
+#working {
+    font-family: Montserrat;
+    height: 500px;
+}
+
+#working h2 {
+    left: 614px;
+}
+
+#working h3 {
+    font-size: 14px;
+    width: 400px;
+    font-weight: 500;
+}
+
+#working p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#working div {
+    float: left;
+    position: relative;
+    top: 230px;
+    left: -40px;
+}
+
+#working div div {
+    width: 83px;
+    height: 83px;
+    border: 2px solid #777777;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 36px;
+    color: #777777;
+    top: 0px;
+    left: -40px;
+}
+
+#penultimate {
+    height: 400px;
+}
+
+#penultimate h2 {
+    left: 650px;
+}
+
+#penultimate p {
+    padding-top: 150px;
+    padding-left: 220px;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+#questions {
+    font-family: Montserrat;
+    height: 500px;
+    background-color: white;
+}
+
+#questions h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#questions form {
+    margin-top: 40px;
+}
+
+#questions form input {
+    margin-top: 20px;
+    margin-left: 215px;
+    width: 390px;
+    height: 48px;
+}
+
+#questions form textarea {
+    float: left;
+    width: 660px;
+    height: 196px;
+    position: relative;
+    top: -202px;
+    left: 627px;
+}
+
+#questions form input[type="checkbox"] {
+    display: none;
+}
+
+#questions label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #FF4500;
+    vertical-align: middle;
+}
+
+#questions form input[type="checkbox"]:checked+label::before {
+    content: '\2714';
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 19px;
+}
+
+#questions label {
+    color: #777777;
+    font-family: Geometria;
+    font-size: 12px;
+    float: left;
+    text-align: left;
+    margin-left: 45px;
+    margin-top: 25px;
+}
+
+#questions label div {
+    margin-top: -34px;
+    margin-left: 35px;
+}
+
+#questions label div p {
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+#questions form input[type="submit"] {
+    width: 190px;
+    height: 40px;
+    margin-left: 75px;
+    background-color: #FF4500;
+    color: white;
+    border-radius: 25px/25px;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+hr {
+    width: 1200px;
+}
+
+.nav {
+    float: left;
+    background-color: white;
+    width: 170px;
+    position: relative;
+    left: 630px;
+    top: 25px;
+    margin-bottom: 70px;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #BFBFBF;
+}
+
+.nav div {
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    background-color: #BFBFBF;
+    width: 2px;
+    height: 18px;
+}
+
+.nav a {
+    float: left;
+    color: #BFBFBF;
+}
+
+main {
+    background-color: white;
+    max-height: 4000px;
+    min-height: 290px;
+}
+
+main h2 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    float: left;
+    position: relative;
+    top: 70px;
+    left: 470px;
+}
+
+.blackout {
+    width: inherit;
+    max-width: 1519px;
+    min-width: 1423px;
+    height: 100%;
+    background-color: black;
+    opacity: .4;
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+}
+
+.feedback {
+    width: 371px;
+    height: 416px;
+    border: 1px solid black;
+    background-color: white;
+    position: fixed;
+    left: 530px;
+    top: 150px;
+    z-index: -1;
+}
+
+.feedback div {
+    cursor: default;
+    float: right;
+    margin-right: 6px;
+    margin-left: 10px;
+    font-size: 19px;
+}
+
+.feedback h2 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+.feedback form {
+    text-align: center;
+}
+
+.feedback form input {
+    margin-top: 20px;
+    width: 279px;
+    height: 36px;
+}
+
+.feedback form input[type="checkbox"] {
+    display: none;
+}
+
+.feedback label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #FF4500;
+    vertical-align: middle;
+}
+
+.feedback form input[type="checkbox"]:checked+label::before {
+    content: '\2714';
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 19px;
+}
+
+.feedback label {
+    color: #777777;
+    font-family: Geometria;
+    font-size: 12px;
+    float: left;
+    text-align: left;
+    margin-left: 45px;
+    margin-top: 25px;
+}
+
+.feedback label div {
+    margin-top: -14px;
+}
+
+.feedback label div p {
+    font-family: Montserrat;
+    font-size: 12px;
+}
+
+.feedback form input[type="submit"] {
+    width: 190px;
+    height: 40px;
+    background-color: #FF4500;
+    color: white;
+    border-radius: 25px/25px;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+footer {
+    width: inherit;
+    height: 397px;
+    background-color: black;
+    color: white;
+}
+
+footer table {
+    font-family: Montserrat;
+    font-family: 16px;
+    color: #777777;
+}
+
+footer table:nth-of-type(1) {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+footer table:nth-of-type(2) {
+    position: relative;
+    top: 25px;
+    left: 450px;
+}
+
+footer table:nth-of-type(2) a {
+    color: #777777;
+}
+
+footer table td {
+    padding-right: 50px;
+    padding-top: 15px;
+}
+
+footer a {
+    color: white;
+}
+
+footer address {
+    font-family: Montserrat;
+    font-style: normal;
+    font-family: 14px;
+    float: left;
+    position: relative;
+    top: -45px;
+    left: 950px;
+}
+
+footer small {
+    font-family: Montserrat;
+    color: #777777;
+    position: relative;
+    top: 170px;
+    left: -230px;
+}
