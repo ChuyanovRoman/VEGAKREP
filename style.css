@@ -8,6 +8,7 @@ body {
     width: 100%;
     max-width: 1519px;
     min-width: 1423px;
+    max-height: 0;
 }
 
 body a {
@@ -16,9 +17,14 @@ body a {
 
 header {
     width: inherit;
+    max-width: 1519px;
+    min-width: 1423px;
     height: 110px;
     background-color: black;
     color: white;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 header a {
@@ -73,7 +79,7 @@ header ul li:hover {
     border-bottom: 3px solid #FF4500;
 }
 
-.border_bottom {
+#border_bottom {
     border-bottom: 3px solid #FF4500;
 }
 
@@ -137,6 +143,7 @@ header ul li:hover {
 }
 
 #carousel figcaption p {
+    min-width: 690px;
     float: left;
     color: white;
     font-family: Montserrat;
@@ -167,10 +174,31 @@ main ul li {
     left: 650px;
 }
 
-#advantages {
-    margin-left: 50px;
-    height: 500px;
+main {
+    margin-top: 110px;
+    background-color: white;
+    max-height: 4000px;
+    min-height: 650px;
+}
+
+body h2 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
     text-align: center;
+    position: relative;
+    top: 80px;
+}
+
+#advantages {
+    max-height: 500px;
+    min-height: 450px;
+    text-align: center;
+}
+
+#advantages h2 {
+    float: left;
+    left: 460px;
 }
 
 #advantages div {
@@ -181,6 +209,7 @@ main ul li {
     float: left;
     height: 200px;
     position: relative;
+    top: 190px;
 }
 
 #advantages div:nth-of-type(1) {
@@ -189,8 +218,7 @@ main ul li {
     background-repeat: no-repeat;
     background-size: 136px;
     background-position: 0px 26px;
-    left: -220px;
-    top: 170px;
+    left: -230px;
 }
 
 #advantages div:nth-of-type(2) {
@@ -199,8 +227,7 @@ main ul li {
     background-repeat: no-repeat;
     background-size: 120px;
     background-position: 38px 0px;
-    left: -140px;
-    top: 170px;
+    left: -150px;
 }
 
 #advantages div:nth-of-type(3) {
@@ -210,7 +237,6 @@ main ul li {
     background-size: 155px;
     background-position: 0px 30px;
     left: -70px;
-    top: 170px;
 }
 
 #advantages div:nth-of-type(4) {
@@ -220,7 +246,6 @@ main ul li {
     background-size: 115px;
     background-position: 0px 15px;
     left: 30px;
-    top: 170px;
 }
 
 #advantages div:nth-of-type(5) {
@@ -229,37 +254,21 @@ main ul li {
     background-repeat: no-repeat;
     background-size: 150px;
     background-position: 0px 50px;
-    left: 140px;
-    top: 170px;
+    left: 150px;
 }
 
 #products {
-    height: 650px;
-}
-
-#products h2 {
-    left: 625px;
+    max-height: 650px;
+    min-height: 550px;
 }
 
 #products a {
     width: 300px;
     height: 300px;
     float: left;
+    margin-left: 30px;
     position: relative;
-    top: 200px;
-    left: -160px;
-}
-
-#products a:nth-of-type(2) {
-    left: -140px;
-}
-
-#products a:nth-of-type(3) {
-    left: -120px;
-}
-
-#products a:nth-of-type(4) {
-    left: -100px;
+    top: 120px;
 }
 
 #products a figure {
@@ -273,6 +282,7 @@ main ul li {
 }
 
 #products a figure figcaption {
+    padding-top: 20px;
     font-family: Montserrat;
     font-size: 18px;
     color: black;
@@ -289,28 +299,32 @@ main ul li {
     font-size: 14px;
     line-height: 40px;
     color: white;
-    top: 240px;
+    top: 200px;
     left: 630px;
 }
 
 #working {
     font-family: Montserrat;
-    height: 500px;
+    max-height: 500px;
+    min-height: 400px;
 }
 
 #working h2 {
-    left: 614px;
+    float: left;
+    left: 615px;
 }
 
 #working h3 {
     font-size: 14px;
-    width: 400px;
+    width: 327px;
     font-weight: 500;
 }
 
 #working p {
+    width: 327px;
     font-size: 14px;
     font-weight: 300;
+    margin-right: 70px;
 }
 
 #working div {
@@ -334,15 +348,17 @@ main ul li {
 }
 
 #penultimate {
-    height: 400px;
+    max-height: 800px;
+    min-height: 400px;
 }
 
 #penultimate h2 {
+    float: left;
     left: 650px;
 }
 
 #penultimate p {
-    padding-top: 150px;
+    padding-top: 180px;
     padding-left: 220px;
     font-family: Montserrat;
     font-size: 14px;
@@ -350,19 +366,14 @@ main ul li {
 
 #questions {
     font-family: Montserrat;
-    height: 500px;
+    height: 600px;
     background-color: white;
-}
-
-#questions h2 {
-    margin-top: 0;
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
+    position: relative;
+    top: -42px;
 }
 
 #questions form {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 #questions form input {
@@ -437,55 +448,29 @@ hr {
     width: 1200px;
 }
 
-.nav {
-    float: left;
+#nav {
+    margin-top: -30px;
+}
+
+#nav div {
+    text-align: center;
     background-color: white;
-    width: 170px;
     position: relative;
-    left: 630px;
-    top: 25px;
-    margin-bottom: 70px;
+    top: 155px;
     font-family: Montserrat;
     font-size: 14px;
     color: #BFBFBF;
 }
 
-.nav div {
-    margin-left: 10px;
-    margin-right: 10px;
-    float: left;
-    background-color: #BFBFBF;
-    width: 2px;
-    height: 18px;
-}
-
-.nav a {
-    float: left;
+#nav div a {
     color: #BFBFBF;
 }
 
-main {
-    background-color: white;
-    max-height: 4000px;
-    min-height: 290px;
-}
-
-main h2 {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-    float: left;
-    position: relative;
-    top: 70px;
-    left: 470px;
-}
-
-.blackout {
+#blackout {
     width: inherit;
     max-width: 1519px;
     min-width: 1423px;
-    height: 100%;
+    height: 97%;
     background-color: black;
     opacity: .4;
     position: fixed;
@@ -493,18 +478,19 @@ main h2 {
     z-index: -1;
 }
 
-.feedback {
+#feedback {
     width: 371px;
-    height: 416px;
+    min-height: 416px;
     border: 1px solid black;
     background-color: white;
+    margin-left: 510px;
+    margin-top: 200px;
     position: fixed;
-    left: 530px;
-    top: 150px;
+    top: 0px;
     z-index: -1;
 }
 
-.feedback div {
+#feedback div {
     cursor: default;
     float: right;
     margin-right: 6px;
@@ -512,7 +498,7 @@ main h2 {
     font-size: 19px;
 }
 
-.feedback h2 {
+#feedback h2 {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
@@ -521,21 +507,21 @@ main h2 {
     margin-top: 40px;
 }
 
-.feedback form {
+#feedback form {
     text-align: center;
 }
 
-.feedback form input {
+#feedback form input {
     margin-top: 20px;
     width: 279px;
     height: 36px;
 }
 
-.feedback form input[type="checkbox"] {
+#feedback form input[type="checkbox"] {
     display: none;
 }
 
-.feedback label::before {
+#feedback label::before {
     content: '';
     display: inline-block;
     width: 18px;
@@ -544,7 +530,7 @@ main h2 {
     vertical-align: middle;
 }
 
-.feedback form input[type="checkbox"]:checked+label::before {
+#feedback form input[type="checkbox"]:checked+label::before {
     content: '\2714';
     color: white;
     text-align: center;
@@ -552,7 +538,7 @@ main h2 {
     line-height: 19px;
 }
 
-.feedback label {
+#feedback label {
     color: #777777;
     font-family: Geometria;
     font-size: 12px;
@@ -562,16 +548,16 @@ main h2 {
     margin-top: 25px;
 }
 
-.feedback label div {
+#feedback label div {
     margin-top: -14px;
 }
 
-.feedback label div p {
+#feedback label div p {
     font-family: Montserrat;
     font-size: 12px;
 }
 
-.feedback form input[type="submit"] {
+#feedback form input[type="submit"] {
     width: 190px;
     height: 40px;
     background-color: #FF4500;
@@ -581,11 +567,138 @@ main h2 {
     font-size: 14px;
 }
 
+#company {
+    font-family: Montserrat;
+    min-height: 500px;
+    width: inherit;
+    text-align: center;
+}
+
+#company h2 {
+    float: left;
+    top: 58px;
+    left: 635px;
+}
+
+#company h4 {
+    font-size: 20px;
+    font-weight: 400;
+    width: 290px;
+}
+
+#company p {
+    font-size: 14px;
+    font-weight: 300;
+    width: 290px;
+}
+
+#company div {
+    float: left;
+    margin-left: 40px;
+    position: relative;
+    top: 185px;
+    left: 40px;
+}
+
+#company div div {
+    margin-right: 50px;
+    width: 201px;
+    height: 201px;
+    border: 2px solid #777777;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+    font-size: 72px;
+    color: black;
+    top: -10px;
+    left: 0px;
+}
+
+#company2 {
+    margin-top: 100px;
+    font-family: Montserrat;
+    height: 2050px;
+}
+
+#company2 h3 {
+    max-width: 600px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#company2 p {
+    max-width: 600px;
+    font-size: 14px;
+}
+
+#company2 figure {
+    float: left;
+}
+
+#company2 figure img {
+    width: 737px;
+    height: 487px;
+}
+
+#company2 figure figcaption {
+    float: right;
+    margin-top: -17px;
+    margin-left: 30px;
+}
+
+#company2 figure:nth-of-type(3) {
+    margin-top: -100px;
+}
+
+#company2 figure:nth-of-type(3) img {
+    width: 797px;
+    height: 764px;
+}
+
+#company2 figure:nth-of-type(3) figcaption {
+    margin-top: 217px;
+    margin-left: -35px;
+}
+
+#company2 figure:nth-of-type(3) figcaption img {
+    width: 246px;
+    height: 139px;
+}
+
+#pdf {
+    margin-top: 70px;
+    font-family: Montserrat;
+    font-size: 18px;
+    position: relative;
+    left: 440px;
+}
+
+#pdf tr td {
+    width: 350px;
+    padding-top: 20px;
+}
+
+#pdf a {
+    color: black;
+    line-height: 50px;
+}
+
+#pdf a div {
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+    background: url(img/PDF@2x.png);
+    background-repeat: no-repeat;
+    float: left;
+}
+
 footer {
     width: inherit;
     height: 397px;
     background-color: black;
     color: white;
+    position: relative;
+    top: -42px;
 }
 
 footer table {

@@ -1,9 +1,12 @@
-var xw = document.getElementsByClassName('feedback'),
-    xb = document.getElementsByClassName('blackout');
+var xw = document.getElementById('feedback'),
+    xb = document.getElementById('blackout');
+
+function connection() {
+    xw.style.zIndex = '3';
+    xb.style.zIndex = '3';
+}
 
 function x() {
-    for (let i = 0; i < xw.length; i++) {
-        xw[i].style.zIndex = '-1';
-        xb[i].style.zIndex = '-1';
-    }
+    xw.style.zIndex = '-1';
+    xb.style.zIndex = '-1';
 }

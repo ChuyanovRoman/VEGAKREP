@@ -17,24 +17,26 @@
                 <h1>VEGAKREP</h1>
             </a>
             <ul>
-                <li>КОМПАНИЯ</li>
+                <li id="border_bottom">КОМПАНИЯ</li>
                 <li><a href="products.html">ПРОДУКЦИЯ</a></li>
                 <li><a href="documents.html">ДОКУМЕНТЫ</a></li>
                 <li><a href="contacts.html">КОНТАКТЫ</a></li>
             </ul>
         </nav>
-        <div>
-            +7(495) 970-70-05<div>Перезвонить</div>
+        <div id="connection" onclick="connection()">
+            +7(495) 970-70-05
+            <div id="Group"></div>
+            <div id="call_back">Перезвонить</div>
         </div>
     </header>
-    <nav>
-        <a href="index.html">Главная</a>
-        <hr>
-        Компания
+    <nav id="nav">
+        <div>
+            <a href="index.html">Главная</a> | Компания
+        </div>
     </nav>
     <main>
-        <h2>О компании</h2>
-        <article>
+        <article id="company">
+            <h2>О компании</h2>
             <div>
                 <div>574</div>
                 <h4>Отгруженных контейнеров</h4>
@@ -55,7 +57,7 @@
                     без посредников</p>
             </div>
         </article>
-        <article>
+        <article id="company2">
             <figure>
                 <img src="img/company/employees.jpg" alt="СОТРУДНИКИ">
                 <figcaption>
@@ -72,7 +74,7 @@
             <figure>
                 <img src="img/company/stock.jpg" alt="СКЛАД">
                 <figcaption>
-                    <h3>СКЛАД</h3>
+                    <h3>НАШ СКЛАД</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br>
                         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>
@@ -99,46 +101,51 @@
             </figure>
         </article>
     </main>
-    <article>
-        <div>&#10006;</div>
+    <div id="blackout"></div>
+    <article id="feedback">
+        <div onclick="x()">&#10006;</div>
         <h2>Заказать обратный звонок</h2>
         <form action="#">
-            <input type="text" placeholder="Ваше имя*"><br>
-            <input type="text" placeholder="Телефон*"><br>
-            <input type="text" placeholder="E-mail"><br>
-            <div>
-                <input type="checkbox" checked>
-                Я согласен с политикой обработки<br>
-                персональных данных
-                <br>
-                <input type="submit" value="Заказать">
-            </div>
+            <input type="text" placeholder="   Ваше имя*"><br>
+            <input type="text" placeholder="   Телефон*"><br>
+            <input type="text" placeholder="   E-mail"><br>
+            <input type="checkbox" id="jackdaw" name="data" checked>
+            <label for="jackdaw">
+                <div>
+                    <p>
+                        Я согласен с политикой обработки<br>
+                        персональных данных
+                    </p>
+                </div>
+            </label>
+            <br>
+            <input type="submit" value="Заказать">
         </form>
     </article>
     <footer>
         <nav>
             <table>
                 <tr>
-                    <td>ГЛАВНАЯ</td>
-                    <td>ПРОДУКЦИЯ</td>
+                    <td><a href="index.html">ГЛАВНАЯ</a></td>
+                    <td><a href="products.html">ПРОДУКЦИЯ</a></td>
                 </tr>
                 <tr>
-                    <td>КОМПАНИЯ</td>
-                    <td>КОНТАКТЫ</td>
+                    <td><a href="company.html">КОМПАНИЯ</a></td>
+                    <td><a href="contacts.html">КОНТАКТЫ</a></td>
                 </tr>
             </table>
             <table>
                 <tr>
-                    <td>Саморезы</td>
-                    <td>Анкерная техника</td>
+                    <td><a href="products.self-tapping screws.html">Саморезы</a></td>
+                    <td><a href="products.anchor technology.html">Анкерная техника</a></td>
                 </tr>
                 <tr>
-                    <td>Шурупы</td>
-                    <td>Метрика</td>
+                    <td><a href="products.screws.html">Шурупы</a></td>
+                    <td><a href="products.metriсs.html">Метрика</a></td>
                 </tr>
             </table>
         </nav>
-        <div>
+        <address>
             <p>
                 +7(495) 970-70-05<br>
                 <br>
@@ -147,7 +154,7 @@
                 <br>
                 sales@vegakrep.ru
             </p>
-        </div>
+        </address>
         <small>© vegakrep.ru 2010 - 2018. Все права защищены</small>
     </footer>
     <script src="script.js"></script>

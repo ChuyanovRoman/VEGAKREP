@@ -23,7 +23,7 @@
                 <li><a href="contacts.html">КОНТАКТЫ</a></li>
             </ul>
         </nav>
-        <div id="connection">
+        <div id="connection" onclick="connection()">
             +7(495) 970-70-05
             <div id="Group"></div>
             <div id="call_back">Перезвонить</div>
@@ -110,29 +110,53 @@
         </article>
         <hr>
         <article id="products">
+            <style>
+                #products h2 {
+                    float: left;
+                    left: 620px;
+                }
+
+                #products a {
+                    top: 190px;
+                    left: -180px;
+                    margin-left: 0;
+                }
+
+                #products a:nth-of-type(2) {
+                    left: -150px;
+                }
+
+                #products a:nth-of-type(3) {
+                    left: -120px;
+                }
+
+                #products a:nth-of-type(4) {
+                    left: -90px;
+                }
+            </style>
             <h2>Наша продукция</h2>
             <a href="products.self-tapping screws.html">
                 <figure>
                     <img src="img/products/self-tapping screws/self-tapping screws.jpg" alt="САМОРЕЗЫ">
-                    <figcaption><br>САМОРЕЗЫ</figcaption>
+                    <figcaption>САМОРЕЗЫ</figcaption>
                 </figure>
             </a>
             <a href="products.anchor technology.html">
                 <figure>
                     <img src="img/products/anchor technology/anchor technology.jpg" alt="АНКЕРНАЯ ТЕХНИКА">
-                    <figcaption><br>АНКЕРНАЯ ТЕХНИКА</figcaption>
+                    <figcaption>АНКЕРНАЯ ТЕХНИКА</figcaption>
                 </figure>
             </a>
             <a href="products.screws.html">
                 <figure>
                     <img src="img/products/screws/screws.jpg" alt="ШУРУПЫ">
-                    <figcaption><br>ШУРУПЫ</figcaption>
+                    <figcaption>ШУРУПЫ</figcaption>
                 </figure>
             </a>
             <a href="products.metriсs.html">
                 <figure>
                     <img src="img/products/metrics/metrics.jpg" alt="МЕТРИКА">
-                    <figcaption><br>МЕТРИКА</figcaption>
+                    <figcaption>МЕТРИКА</figcaption>
                 </figure>
             </a>
             <a href="products.html">Перейти в каталог</a>
@@ -204,8 +228,8 @@
             <input type="submit" value="Отправить">
         </form>
     </article>
-    <div class="blackout"></div>
-    <article class="feedback">
+    <div id="blackout"></div>
+    <article id="feedback">
         <div onclick="x()">&#10006;</div>
         <h2>Заказать обратный звонок</h2>
         <form action="#">

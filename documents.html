@@ -19,44 +19,64 @@
             <ul>
                 <li><a href="company.html">КОМПАНИЯ</a></li>
                 <li><a href="products.html">ПРОДУКЦИЯ</a></li>
-                <li class="border_bottom">ДОКУМЕНТЫ</li>
+                <li id="border_bottom">ДОКУМЕНТЫ</li>
                 <li><a href="contacts.html">КОНТАКТЫ</a></li>
             </ul>
         </nav>
-        <div id="connection">
+        <div id="connection" onclick="connection()">
             +7(495) 970-70-05
             <div id="Group"></div>
             <div id="call_back">Перезвонить</div>
         </div>
     </header>
-    <nav class="nav">
-        <a href="index.html">Главная</a>
-        <div></div>
-        Документы
+    <nav id="nav">
+        <div>
+            <a href="index.html">Главная</a> | Документы
+        </div>
     </nav>
     <main>
         <h2>Документы</h2>
-        <a href="#">
-            <div></div>Устав.pdf
-        </a>
-        <a href="#">
-            <div></div>Устав.pdf
-        </a>
-        <a href="#">
-            <div></div>Аудит Май 2019.pdf
-        </a>
-        <a href="#">
-            <div></div>Аудит Май 2019.pdf
-        </a>
-        <a href="#">
-            <div></div>ОГРН+ЕГРЮЛ.pdf
-        </a>
-        <a href="#">
-            <div></div>ОГРН+ЕГРЮЛ.pdf
-        </a>
+        <table id="pdf">
+            <tr>
+                <td>
+                    <a href="#">
+                        <div></div>Устав.pdf
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <div></div>Устав.pdf
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">
+                        <div></div>Аудит Май 2019.pdf
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <div></div>Аудит Май 2019.pdf
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">
+                        <div></div>ОГРН+ЕГРЮЛ.pdf
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <div></div>ОГРН+ЕГРЮЛ.pdf
+                    </a>
+                </td>
+            </tr>
+        </table>
     </main>
-    <div class="blackout"></div>
-    <article class="feedback">
+    <div id="blackout" style="height: 800px;"></div>
+    <article id="feedback">
         <div onclick="x()">&#10006;</div>
         <h2>Заказать обратный звонок</h2>
         <form action="#">
