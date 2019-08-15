@@ -20,88 +20,105 @@
                 <li><a href="company.html">КОМПАНИЯ</a></li>
                 <li><a href="products.html">ПРОДУКЦИЯ</a></li>
                 <li><a href="documents.html">ДОКУМЕНТЫ</a></li>
-                <li>КОНТАКТЫ</li>
+                <li id="border_bottom">КОНТАКТЫ</li>
             </ul>
         </nav>
-        <div>
-            +7(495) 970-70-05<div>Перезвонить</div>
+        <div id="connection" onclick="connection()">
+            +7(495) 970-70-05
+            <div id="Group"></div>
+            <div id="call_back">Перезвонить</div>
         </div>
     </header>
-    <nav>
-        <a href="index.html">Главная</a>
-        <hr>
-        Контакты
+    <nav id="nav">
+        <div>
+            <a href="index.html">Главная</a> | Контакты
+        </div>
     </nav>
-    <main>
+    <main style="height:1280px;">
         <h2>Обратная связь</h2>
-        7(495) 970-70-05<br>
-        <br>
-        sales@vegakrep.ru<br>
-        <br>
-        142105, Московская область,<br>
-        г.Подольск, ул.Большая Серпуховская 43<br>
-        <br>
-        ИНН 7725414876<br>
-        <br>
-        ОГРН 1187746027193<br>
-        <br>
-        КПП 773301001
-        <form action="#">
-            <input type="text" placeholder="Ваше имя*"><br>
-            <input type="text" placeholder="Телефон*"><br>
-            <input type="text" placeholder="E-mail"><br>
-            <textarea name="text" id="" cols="100" rows="10" placeholder="Комментарий"></textarea><br>
-            <div>
-                <input type="checkbox" checked>
-                Я согласен с политикой обработки<br>
-                персональных данных
-                <input type="submit" value="Отправить">
-            </div>
-        </form>
+        <article id="questions" style="left: 197px;top: -10px;width: 1226px;height: 0px;">
+            <address style="width:205px;top:145px;left: -50px;height: 0px;float: none;">
+                7(495) 970-70-05<br>
+                <br>
+                sales@vegakrep.ru<br>
+                <br>
+                142105, Московская область,<br>
+                г.Подольск, ул.Большая<br>
+                Серпуховская 43<br>
+                <br>
+                ИНН 7725414876<br>
+                <br>
+                ОГРН 1187746027193<br>
+                <br>
+                КПП 773301001
+            </address>
+            <form action="#">
+                <input type="text" placeholder="Ваше имя*"><br>
+                <input type="text" placeholder="Телефон*"><br>
+                <input type="text" placeholder="E-mail"><br>
+                <textarea name="text" id="" cols="100" rows="10" placeholder="Комментарий"
+                    style="width: 523px;"></textarea><br>
+                <input type="checkbox" id="jackdaw" name="data" checked>
+                <label style="left: 100px;" for="jackdaw">
+                    <div>
+                        <p>
+                            Я согласен с политикой обработки<br>
+                            персональных данных
+                        </p>
+                    </div>
+                </label>
+                <input style="left: -80px;" type="submit" value="Отправить">
+            </form>
+        </article>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7639727558!2d36.82512928156911!3d55.58074807696959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1564263209501!5m2!1sru!2sru"
-            width="1410" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            width="100%" height="475px" frameborder="0" style="position: relative;top: 160px;" allowfullscreen></iframe>
     </main>
-    <article>
-        <div>&#10006;</div>
+    <div id="blackout" style="height: 800px;"></div>
+    <article id="feedback">
+        <div onclick="x()">&#10006;</div>
         <h2>Заказать обратный звонок</h2>
         <form action="#">
-            <input type="text" placeholder="Ваше имя*"><br>
-            <input type="text" placeholder="Телефон*"><br>
-            <input type="text" placeholder="E-mail"><br>
-            <div>
-                <input type="checkbox" checked>
-                Я согласен с политикой обработки<br>
-                персональных данных
-                <br>
-                <input type="submit" value="Заказать">
-            </div>
+            <input type="text" placeholder="   Ваше имя*"><br>
+            <input type="text" placeholder="   Телефон*"><br>
+            <input type="text" placeholder="   E-mail"><br>
+            <input type="checkbox" id="jackdaw" name="data" checked>
+            <label for="jackdaw">
+                <div>
+                    <p>
+                        Я согласен с политикой обработки<br>
+                        персональных данных
+                    </p>
+                </div>
+            </label>
+            <br>
+            <input type="submit" value="Заказать">
         </form>
     </article>
     <footer>
         <nav>
             <table>
                 <tr>
-                    <td>ГЛАВНАЯ</td>
-                    <td>ПРОДУКЦИЯ</td>
+                    <td><a href="index.html">ГЛАВНАЯ</a></td>
+                    <td><a href="products.html">ПРОДУКЦИЯ</a></td>
                 </tr>
                 <tr>
-                    <td>КОМПАНИЯ</td>
-                    <td>КОНТАКТЫ</td>
+                    <td><a href="company.html">КОМПАНИЯ</a></td>
+                    <td><a href="contacts.html">КОНТАКТЫ</a></td>
                 </tr>
             </table>
             <table>
                 <tr>
-                    <td>Саморезы</td>
-                    <td>Анкерная техника</td>
+                    <td><a href="products.self-tapping screws.html">Саморезы</a></td>
+                    <td><a href="products.anchor technology.html">Анкерная техника</a></td>
                 </tr>
                 <tr>
-                    <td>Шурупы</td>
-                    <td>Метрика</td>
+                    <td><a href="products.screws.html">Шурупы</a></td>
+                    <td><a href="products.metriсs.html">Метрика</a></td>
                 </tr>
             </table>
         </nav>
-        <div>
+        <address>
             <p>
                 +7(495) 970-70-05<br>
                 <br>
@@ -110,7 +127,7 @@
                 <br>
                 sales@vegakrep.ru
             </p>
-        </div>
+        </address>
         <small>© vegakrep.ru 2010 - 2018. Все права защищены</small>
     </footer>
     <script src="script.js"></script>
