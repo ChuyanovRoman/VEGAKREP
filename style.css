@@ -1,9 +1,5 @@
-@font-face {
-    font-family: 'Gotham Pro Light', 'Gotham Pro Bold', 'Montserrat ExtraLight', 'Montserrat SemiBold', 'Montserrat Thin';
-    src: url('GothamPro-Light.woff'), url('GothamPro-Bold.woff'), url('Montserrat-ExtraLight.woff'), url('Montserrat-SemiBold.woff'), url('Montserrat-Thin.woff');
-}
-
 body {
+    font-family: Montserrat;
     margin: 0 auto;
     width: 100%;
     max-width: 1519px;
@@ -50,7 +46,6 @@ header nav a div {
 }
 
 header nav a h1 {
-    font-family: Montserrat;
     font-weight: 400;
     font-size: 25px;
     float: left;
@@ -60,7 +55,6 @@ header nav a h1 {
 }
 
 header ul {
-    font-family: Montserrat;
     font-size: 18px;
     list-style-type: none;
     float: left;
@@ -84,7 +78,6 @@ header ul li:hover {
 }
 
 #connection {
-    font-family: Montserrat;
     font-size: 18px;
     float: left;
     position: relative;
@@ -136,7 +129,6 @@ header ul li:hover {
 #carousel figcaption h1 {
     float: left;
     color: white;
-    font-family: Montserrat;
     font-size: 40px;
     font-weight: 400;
     border-bottom: 6px solid #FF4500;
@@ -146,7 +138,6 @@ header ul li:hover {
     min-width: 690px;
     float: left;
     color: white;
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
 }
@@ -182,7 +173,6 @@ main {
 }
 
 body h2 {
-    font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;
     text-align: center;
@@ -202,7 +192,6 @@ body h2 {
 }
 
 #advantages div {
-    font-family: Montserrat;
     font-size: 14px;
     display: flex;
     align-items: flex-end;
@@ -283,7 +272,6 @@ body h2 {
 
 #products a figure figcaption {
     padding-top: 20px;
-    font-family: Montserrat;
     font-size: 18px;
     color: black;
     text-align: center;
@@ -295,7 +283,6 @@ body h2 {
     background-color: #FF4500;
     border-radius: 25px/25px;
     text-align: center;
-    font-family: Montserrat;
     font-size: 14px;
     line-height: 40px;
     color: white;
@@ -304,7 +291,6 @@ body h2 {
 }
 
 #working {
-    font-family: Montserrat;
     max-height: 500px;
     min-height: 400px;
 }
@@ -360,12 +346,10 @@ body h2 {
 #penultimate p {
     padding-top: 180px;
     padding-left: 220px;
-    font-family: Montserrat;
     font-size: 14px;
 }
 
 #questions {
-    font-family: Montserrat;
     height: 600px;
     background-color: white;
     position: relative;
@@ -427,7 +411,6 @@ body h2 {
 }
 
 #questions label div p {
-    font-family: Montserrat;
     font-size: 14px;
 }
 
@@ -458,7 +441,6 @@ hr {
     background-color: white;
     position: relative;
     top: 155px;
-    font-family: Montserrat;
     font-size: 14px;
     color: #BFBFBF;
 }
@@ -504,7 +486,6 @@ hr {
 }
 
 #feedback h2 {
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
     text-align: center;
@@ -545,7 +526,6 @@ hr {
 
 #feedback label {
     color: #777777;
-    font-family: Geometria;
     font-size: 12px;
     float: left;
     text-align: left;
@@ -558,7 +538,6 @@ hr {
 }
 
 #feedback label div p {
-    font-family: Montserrat;
     font-size: 12px;
 }
 
@@ -573,7 +552,6 @@ hr {
 }
 
 #company {
-    font-family: Montserrat;
     min-height: 500px;
     width: inherit;
     text-align: center;
@@ -621,7 +599,6 @@ hr {
 
 #company2 {
     margin-top: 100px;
-    font-family: Montserrat;
     height: 2050px;
 }
 
@@ -671,7 +648,6 @@ hr {
 }
 
 #pdf {
-    font-family: Montserrat;
     font-size: 18px;
     position: relative;
     left: 440px;
@@ -700,7 +676,6 @@ hr {
 #content figure {
     position: relative;
     left: 41px;
-    font-family: Montserrat;
     float: left;
     width: 631px;
     max-height: 2000px;
@@ -770,7 +745,6 @@ footer {
 }
 
 footer table {
-    font-family: Montserrat;
     font-family: 16px;
     color: #777777;
 }
@@ -801,7 +775,6 @@ footer a {
 }
 
 address {
-    font-family: Montserrat;
     font-style: normal;
     font-family: 14px;
     float: left;
@@ -811,7 +784,6 @@ address {
 }
 
 footer small {
-    font-family: Montserrat;
     color: #777777;
     position: relative;
     top: 170px;
