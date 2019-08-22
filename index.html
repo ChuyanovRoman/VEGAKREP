@@ -31,58 +31,56 @@
     </header>
     <main>
         <article id="carousel">
-            <div>
-                <figure>
-                    <img src="img/main/SamorezSlide@2x.jpg" alt="САМОРЕЗЫ">
-                    <figcaption>
-                        <h1>Саморезы</h1>
-                        <p>
-                            Только качественная, сертифицированная продукция<br>
-                            Лучшие цены от производителей без посредников
-                        </p>
-                        <button>Заказать</button>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/main/ShpilkaSlide@2x.jpg" alt="ШПИЛЬКА ВИНТОВАЯ">
-                    <figcaption>
-                        <h1>Шпилька винтовая</h1>
-                        <p>
-                            Только качественная, сертифицированная продукция<br>
-                            Лучшие цены от производителей безпосредников
-                        </p>
-                        <button>Заказать</button>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/main/AnchorSlide@2x.jpg" alt="АНКЕРНАЯ ТЕХНИКА">
-                    <figcaption>
-                        <h1>Анкерная техника</h1>
-                        <p>
-                            Только качественная, сертифицированная продукция<br>
-                            Лучшие цены от производителей без посредников
-                        </p>
-                        <button>Заказать</button>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/main/ShurupSlide2@2x.jpg" alt="ШУРУПЫ">
-                    <figcaption>
-                        <h1>Шурупы</h1>
-                        <p>
-                            Только качественная, сертифицированная продукция<br>
-                            Лучшие цены от производителей без посредников
-                        </p>
-                        <button>Заказать</button>
-                    </figcaption>
-                </figure>
-            </div>
+            <figure class="carousel">
+                <img src="img/main/SamorezSlide@2x.jpg" alt="САМОРЕЗЫ">
+                <figcaption>
+                    <h1 style="width:220px">Саморезы</h1>
+                    <p>
+                        Только качественная, сертифицированная продукция<br>
+                        Лучшие цены от производителей без посредников
+                    </p>
+                    <button>Заказать</button>
+                </figcaption>
+            </figure>
+            <figure class="carousel">
+                <img src="img/main/ShpilkaSlide@2x.jpg" alt="ШПИЛЬКА ВИНТОВАЯ">
+                <figcaption>
+                    <h1>Шпилька винтовая</h1>
+                    <p>
+                        Только качественная, сертифицированная продукция<br>
+                        Лучшие цены от производителей безпосредников
+                    </p>
+                    <button>Заказать</button>
+                </figcaption>
+            </figure>
+            <figure class="carousel">
+                <img src="img/main/AnchorSlide@2x.jpg" alt="АНКЕРНАЯ ТЕХНИКА">
+                <figcaption>
+                    <h1>Анкерная техника</h1>
+                    <p>
+                        Только качественная, сертифицированная продукция<br>
+                        Лучшие цены от производителей без посредников
+                    </p>
+                    <button>Заказать</button>
+                </figcaption>
+            </figure>
+            <figure class="carousel">
+                <img src="img/main/ShurupSlide2@2x.jpg" alt="ШУРУПЫ">
+                <figcaption>
+                    <h1 style="width:190px">Шурупы</h1>
+                    <p>
+                        Только качественная, сертифицированная продукция<br>
+                        Лучшие цены от производителей без посредников
+                    </p>
+                    <button>Заказать</button>
+                </figcaption>
+            </figure>
         </article>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li onclick="screws()"></li>
+            <li onclick="hairpin()"></li>
+            <li onclick="equipment()"></li>
+            <li onclick="wood()"></li>
         </ul>
         <article id="advantages">
             <h2>Наши преимущества</h2>
@@ -211,10 +209,10 @@
     </main>
     <article id="questions">
         <h2>Остались вопросы? Напишите нам</h2>
-        <form id="sending_data" action="#">
-            <input type="text" placeholder="Ваше имя*"><br>
-            <input type="text" placeholder="Телефон*"><br>
-            <input type="text" placeholder="E-mail"><br>
+        <form id="sending_data" action="mail.php" method="POST">
+            <input type="text" placeholder="Ваше имя*" name="user_name"><br>
+            <input type="text" placeholder="Телефон*" name="user_phone"><br>
+            <input type="text" placeholder="E-mail" name="user_email"><br>
             <textarea name="text" id="" cols="100" rows="10" placeholder="Комментарий"></textarea><br>
             <input id="jackdaw" type="checkbox" name="data" checked>
             <label for="jackdaw">

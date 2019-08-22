@@ -23,7 +23,7 @@ header {
     color: white;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 11;
 }
 
 header a {
@@ -108,14 +108,19 @@ header ul li:hover {
 #carousel {
     width: inherit;
     height: 1080px;
+    position: relative;
+    top: 0px;
     overflow: hidden;
 }
 
-#carousel div figure {
+.carousel {
     margin: 0 auto;
+    transition: 1s;
+    position: absolute;
+    left: 0;
 }
 
-#carousel figure img {
+.carousel img {
     width: 1519px;
     height: 1080px;
 }
@@ -129,8 +134,8 @@ header ul li:hover {
 }
 
 #carousel figcaption h1 {
-    width: 250px;
-    text-align: center;
+    width: 400px;
+    text-align: left;
     float: left;
     color: white;
     font-size: 40px;
@@ -159,10 +164,11 @@ main ul li {
     float: left;
     font-size: 30px;
     margin-left: 20px;
-    color: #FF4500;
+    color: #BFBFBF;
     position: relative;
     top: -110px;
     left: 650px;
+    z-index: 10;
 }
 
 main {
