@@ -82,6 +82,109 @@
             <li onclick="equipment()"></li>
             <li onclick="wood()"></li>
         </ul>
+        <script>
+            var carousel = document.getElementsByClassName('carousel'),
+                li = document.getElementsByTagName('li'),
+                flag = 1;
+
+            f();
+
+            function f() {
+                screws();
+                setTimeout(hairpin, 10000);
+                setTimeout(equipment, 20000);
+                setTimeout(wood, 30000);
+                setTimeout(f, 40000);
+            };
+
+            function screws() {
+                if (flag == 1) {
+                    flag = 0;
+                    for (let z = 0; z < carousel.length; z++) {
+                        carousel[0].style.zIndex = 9;
+                        carousel[0].style.left = 0;
+                        setTimeout(() => (
+                            carousel[1].style.left = 1519 + 'px',
+                            carousel[2].style.left = 1519 + 'px',
+                            carousel[3].style.left = 1519 + 'px',
+                            setTimeout(() => (carousel[z].style.zIndex = 1), 245),
+                            flag = 1), 1000);
+                    }
+                    for (let i = 0; i < li.length; i++) {
+                        li[5].style.color = '#BFBFBF';
+                        li[6].style.color = '#BFBFBF';
+                        li[7].style.color = '#BFBFBF';
+                        li[4].style.color = '#FF4500';
+                    }
+                }
+            }
+
+            function hairpin() {
+                if (flag == 1) {
+                    flag = 0;
+                    for (let z = 0; z < carousel.length; z++) {
+                        carousel[1].style.zIndex = 8;
+                        carousel[1].style.left = 0;
+                        setTimeout(() => (
+                            carousel[0].style.left = 1519 + 'px',
+                            carousel[2].style.left = 1519 + 'px',
+                            carousel[3].style.left = 1519 + 'px',
+                            carousel[z].style.zIndex = 1,
+                            flag = 1), 1000);
+                    }
+                    for (let i = 0; i < li.length; i++) {
+                        li[4].style.color = '#BFBFBF';
+                        li[6].style.color = '#BFBFBF';
+                        li[7].style.color = '#BFBFBF';
+                        li[5].style.color = '#FF4500';
+                    }
+                }
+            }
+
+            function equipment() {
+                if (flag == 1) {
+                    flag = 0;
+                    for (let z = 0; z < carousel.length; z++) {
+                        carousel[2].style.zIndex = 7;
+                        carousel[2].style.left = 0;
+                        setTimeout(() => (
+                            carousel[0].style.left = 1519 + 'px',
+                            carousel[1].style.left = 1519 + 'px',
+                            carousel[3].style.left = 1519 + 'px',
+                            carousel[z].style.zIndex = 1,
+                            flag = 1), 1000);
+                    }
+                    for (let i = 0; i < li.length; i++) {
+                        li[4].style.color = '#BFBFBF';
+                        li[5].style.color = '#BFBFBF';
+                        li[7].style.color = '#BFBFBF';
+                        li[6].style.color = '#FF4500';
+                    }
+                }
+            }
+
+            function wood() {
+                if (flag == 1) {
+                    flag = 0;
+                    for (let z = 0; z < carousel.length; z++) {
+                        carousel[3].style.zIndex = 6;
+                        carousel[3].style.left = 0;
+                        setTimeout(() => (
+                            carousel[0].style.left = 1519 + 'px',
+                            carousel[1].style.left = 1519 + 'px',
+                            carousel[2].style.left = 1519 + 'px',
+                            carousel[z].style.zIndex = 1,
+                            flag = 1), 1000);
+                    }
+                    for (let i = 0; i < li.length; i++) {
+                        li[4].style.color = '#BFBFBF';
+                        li[5].style.color = '#BFBFBF';
+                        li[6].style.color = '#BFBFBF';
+                        li[7].style.color = '#FF4500';
+                    }
+                }
+            }
+        </script>
         <article id="advantages">
             <h2>Наши преимущества</h2>
             <div>
@@ -209,12 +312,13 @@
     </main>
     <article id="questions">
         <h2>Остались вопросы? Напишите нам</h2>
-        <form id="sending_data" action="mail.php" method="POST">
-            <input type="text" placeholder="Ваше имя*" name="user_name"><br>
-            <input type="text" placeholder="Телефон*" name="user_phone"><br>
-            <input type="text" placeholder="E-mail" name="user_email"><br>
-            <textarea name="text" id="" cols="100" rows="10" placeholder="Комментарий"></textarea><br>
-            <input id="jackdaw" type="checkbox" name="data" checked>
+        <form id="sending_data" action="#">
+            <input oninput="nam(this)" type="text" placeholder="Ваше имя*" maxlength="16" required><br>
+            <input oninput="tel(this),setCustomValidity('')" type="tel" placeholder="Телефон*" maxlength="16"
+                pattern="^[0-9-+()]{16}$" required oninvalid="setCustomValidity('Заполните это поле.')"><br>
+            <input oninput="mai(this)" type="email" placeholder="E-mail" maxlength="30" required><br>
+            <textarea placeholder="Комментарий" maxlength="300" required></textarea><br>
+            <input id="jackdaw" type="checkbox" checked required>
             <label for="jackdaw">
                 <div>
                     <p>
@@ -231,10 +335,11 @@
         <div onclick="x()">&#10006;</div>
         <h2>Заказать обратный звонок</h2>
         <form id="sending_data" action="#">
-            <input type="text" placeholder="   Ваше имя*"><br>
-            <input type="text" placeholder="   Телефон*"><br>
-            <input type="text" placeholder="   E-mail"><br>
-            <input type="checkbox" id="jackdaw2" name="data" checked>
+            <input oninput="nam(this)" type="text" placeholder="Ваше имя*" maxlength="16" required><br>
+            <input oninput="tel(this),setCustomValidity('')" type="tel" placeholder="Телефон*" maxlength="16"
+                pattern="^[0-9-+()]{16}$" required oninvalid="setCustomValidity('Заполните это поле.')"><br>
+            <input oninput="mai(this)" type="email" placeholder="E-mail" maxlength="30" required><br>
+            <input type="checkbox" id="jackdaw2" checked required>
             <label for="jackdaw2">
                 <div>
                     <p>

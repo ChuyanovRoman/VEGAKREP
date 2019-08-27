@@ -360,15 +360,19 @@ body h2 {
 
 #questions form input {
     margin-top: 20px;
-    margin-left: 215px;
+    padding-left: 20px;
+    margin-left: 195px;
     width: 390px;
     height: 48px;
 }
 
 #questions form textarea {
+    resize: none;
     float: left;
     width: 660px;
-    height: 196px;
+    height: 181px;
+    padding-left: 20px;
+    padding-top: 15px;
     position: relative;
     top: -202px;
     left: 627px;
@@ -483,6 +487,7 @@ hr {
 
 #feedback form input {
     margin-top: 20px;
+    padding-left: 15px;
     width: 279px;
     height: 36px;
 }
@@ -734,5 +739,5 @@ footer small {
     color: #777777;
     position: relative;
     top: 170px;
-    left: -230px;
+    left: -190px;
 }

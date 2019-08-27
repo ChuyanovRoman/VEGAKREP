@@ -348,10 +348,11 @@
         <div onclick="x()">&#10006;</div>
         <h2>Заказать обратный звонок</h2>
         <form id="sending_data" action="#">
-            <input type="text" placeholder="   Ваше имя*"><br>
-            <input type="text" placeholder="   Телефон*"><br>
-            <input type="text" placeholder="   E-mail"><br>
-            <input type="checkbox" id="jackdaw2" name="data" checked>
+            <input oninput="nam(this)" type="text" placeholder="Ваше имя*" maxlength="16" required><br>
+            <input oninput="tel(this),setCustomValidity('')" type="tel" placeholder="Телефон*" maxlength="16"
+                pattern="^[0-9-+()]{16}$" required oninvalid="setCustomValidity('Заполните это поле.')"><br>
+            <input oninput="mai(this)" type="email" placeholder="E-mail" maxlength="30" required><br>
+            <input type="checkbox" id="jackdaw2" checked required>
             <label for="jackdaw2">
                 <div>
                     <p>

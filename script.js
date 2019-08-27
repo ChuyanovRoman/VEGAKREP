@@ -1,105 +1,49 @@
-var carousel = document.getElementsByClassName('carousel'),
-    li = document.getElementsByTagName('li'),
-    xw = document.getElementById('feedback'),
+var xw = document.getElementById('feedback'),
     xb = document.getElementById('blackout'),
-    flag = 1;
+    flag2 = 1;
 
-f();
+function nam(e) {
+    e.value = e.value.replace(/['0-9','/:'=!_.@#{}№<$|%()-+^&*~`ёЁ>?";']/g, '');
+    e.value = e.value.replace(/[\s]{2}/g, '');
+}
 
-function f() {
-    screws();
-    setTimeout(hairpin, 10000);
-    setTimeout(equipment, 20000);
-    setTimeout(wood, 30000);
-    setTimeout(f, 40000);
-};
-
-function screws() {
-    if (flag == 1) {
-        flag = 0;
-        for (let z = 0; z < carousel.length; z++) {
-            carousel[0].style.zIndex = 9;
-            carousel[0].style.left = 0;
-            setTimeout(() => (
-                carousel[1].style.left = 1519 + 'px',
-                carousel[2].style.left = 1519 + 'px',
-                carousel[3].style.left = 1519 + 'px',
-                setTimeout(() => (carousel[z].style.zIndex = 1), 200),
-                flag = 1), 1000);
+function tel(e) {
+    e.value = e.value.replace(/['а-я','a-z','A-Z','А-Я','\s/:'=!_.@#{}№<$|%^&*~`ёЁ>?";']/g, '');
+    e.value = e.value.replace(/[()+-]{2}/g, '');
+    if (e.value.length == 1) {
+        e.value = '+7(' + e.value.replace(/[()+-]/g, '');
+    } else if (e.value.length == 2) {
+        e.value = '+7(';
+    } else if (e.value.length == 6) {
+        if (flag2 == 1) {
+            flag2 = 0;
+            e.value = e.value + ')';
+        } else {
+            flag2 = 1;
+            e.value = e.value.slice(0, -1);
         }
-        for (let i = 0; i < li.length; i++) {
-            li[5].style.color = '#BFBFBF';
-            li[6].style.color = '#BFBFBF';
-            li[7].style.color = '#BFBFBF';
-            li[4].style.color = '#FF4500';
+    } else if (e.value.length == 10) {
+        if (flag2 == 0) {
+            flag2 = 1;
+            e.value = e.value + '-';
+        } else {
+            flag2 = 0;
+            e.value = e.value.slice(0, -1);
+        }
+    } else if (e.value.length == 13) {
+        if (flag2 == 1) {
+            flag2 = 0;
+            e.value = e.value + '-';
+        } else {
+            flag2 = 1;
+            e.value = e.value.slice(0, -1);
         }
     }
 }
 
-function hairpin() {
-    if (flag == 1) {
-        flag = 0;
-        for (let z = 0; z < carousel.length; z++) {
-            carousel[1].style.zIndex = 8;
-            carousel[1].style.left = 0;
-            setTimeout(() => (
-                carousel[0].style.left = 1519 + 'px',
-                carousel[2].style.left = 1519 + 'px',
-                carousel[3].style.left = 1519 + 'px',
-                carousel[z].style.zIndex = 1,
-                flag = 1), 1000);
-        }
-        for (let i = 0; i < li.length; i++) {
-            li[4].style.color = '#BFBFBF';
-            li[6].style.color = '#BFBFBF';
-            li[7].style.color = '#BFBFBF';
-            li[5].style.color = '#FF4500';
-        }
-    }
-}
-
-function equipment() {
-    if (flag == 1) {
-        flag = 0;
-        for (let z = 0; z < carousel.length; z++) {
-            carousel[2].style.zIndex = 7;
-            carousel[2].style.left = 0;
-            setTimeout(() => (
-                carousel[0].style.left = 1519 + 'px',
-                carousel[1].style.left = 1519 + 'px',
-                carousel[3].style.left = 1519 + 'px',
-                carousel[z].style.zIndex = 1,
-                flag = 1), 1000);
-        }
-        for (let i = 0; i < li.length; i++) {
-            li[4].style.color = '#BFBFBF';
-            li[5].style.color = '#BFBFBF';
-            li[7].style.color = '#BFBFBF';
-            li[6].style.color = '#FF4500';
-        }
-    }
-}
-
-function wood() {
-    if (flag == 1) {
-        flag = 0;
-        for (let z = 0; z < carousel.length; z++) {
-            carousel[3].style.zIndex = 6;
-            carousel[3].style.left = 0;
-            setTimeout(() => (
-                carousel[0].style.left = 1519 + 'px',
-                carousel[1].style.left = 1519 + 'px',
-                carousel[2].style.left = 1519 + 'px',
-                carousel[z].style.zIndex = 1,
-                flag = 1), 1000);
-        }
-        for (let i = 0; i < li.length; i++) {
-            li[4].style.color = '#BFBFBF';
-            li[5].style.color = '#BFBFBF';
-            li[6].style.color = '#BFBFBF';
-            li[7].style.color = '#FF4500';
-        }
-    }
+function mai(e) {
+    e.value = e.value.replace(/[а-я','А-Я','/:'=!_#{}№<$|%()-+^&*~`ёЁ>?";']/g, '');
+    e.value = e.value.replace(/[.@-]{2}/g, '');
 }
 
 function connection() {
